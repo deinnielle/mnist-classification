@@ -1,0 +1,77 @@
+@font-face {
+  font-family: UniversProLight;
+  src: url(fonts/Univers_Next_Pro_Light.woff);
+}
+
+* {
+  text-transform: uppercase;
+}
+
+body {
+  margin: auto;
+  font-family: UniversProLight, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+#drawing {
+  margin: 20px 0 0 0;
+  width: 100%;
+  height: 252px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#drawing div {
+  width: 252px;
+  height: 252px;
+  border: 1px solid;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+canvas {
+  transform: scale(9);
+  cursor: crosshair;
+}
+
+#controls {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  font-size: 100%;
+  font-family: inherit;
+  background: none;
+  border: 1px solid;
+  outline: none;
+  padding: 5px 0 0 0;
+  width: 127px;
+  height: 35px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+#controls #predict {
+  width: 128px;
+  margin: 0 0 0 -1px;
+}
+
+#prediction {
+  margin: 10px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
